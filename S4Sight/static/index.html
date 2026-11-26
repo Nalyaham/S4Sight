@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0F2A33">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="S4Sight">
+<title>S4Sight</title>
+<link rel="manifest" href="/static/manifest.json">
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/static/icon.svg">
+<link rel="stylesheet" href="/static/styles.css?v=3.3">
+</head>
+<body>
+<!-- phone: top bar -->
+<header class="mtop">
+  <span class="mbrand">S4Sight</span>
+  <select id="reader-m" aria-label="Who is working"></select>
+</header>
+<div class="app">
+  <nav class="side">
+    <div class="brand">S4Sight<small>Microscopy reading assistant: TB, stool, STI</small></div>
+    <div class="who top">Who is working?
+      <select id="reader" aria-label="Who is working"></select>
+    </div>
+    <a href="#/" data-r="">Home</a>
+    <a href="#/analyze" data-r="analyze" class="cta">+ New sample</a>
+    <a href="#/expert" data-r="expert">Expert queue <span class="badge" id="rv-badge" hidden>0</span></a>
+    <a href="#/results" data-r="results">Results</a>
+    <details id="more-nav" class="more">
+      <summary>More tools</summary>
+      <a href="#/dataset" data-r="dataset">Training pictures</a>
+      <a href="#/training" data-r="training">AI models</a>
+      <a href="#/performance" data-r="performance">Performance</a>
+      <a href="#/settings" data-r="settings">Settings and phones</a>
+    </details>
+    <div class="grow"></div>
+    <a href="#" class="open-phone" style="font-size:13px">&#128241; Open on a phone</a>
+    <a href="#" id="fb-link" style="font-size:13px">Give feedback</a>
+    <div class="who"><div id="model-chip"></div></div>
+  </nav>
+  <main id="view"></main>
+</div>
+<!-- phone: bottom tabs -->
+<nav class="mtabs" aria-label="Main">
+  <a href="#/" data-r=""><i>&#8962;</i>Home</a>
+  <a href="#/analyze" data-r="analyze" class="cta"><i>&#65291;</i>New</a>
+  <a href="#/expert" data-r="expert"><i>&#9733;</i>Expert<span class="badge" id="rv-badge-m" hidden>0</span></a>
+  <a href="#/results" data-r="results"><i>&#9776;</i>Results</a>
+  <a href="#/more" data-r="more"><i>&#8943;</i>More</a>
+</nav>
+<script src="/static/app.js?v=3.3"></script>
+<script src="/static/pages.js?v=3.3"></script>
+<script src="/static/pages2.js?v=3.3"></script>
+<script src="/static/pages3.js?v=3.3"></script>
+<script>boot();</script>
+</body>
+</html>

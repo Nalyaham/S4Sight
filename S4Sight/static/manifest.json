@@ -1,0 +1,14 @@
+{
+  "name": "S4Sight",
+  "short_name": "S4Sight",
+  "description": "Microscopy reading assistant: TB, stool parasites, STI swabs",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F4F8F9",
+  "theme_color": "#0F2A33",
+  "icons": [
+    {"src": "/static/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
+  ]
+}
